@@ -692,8 +692,8 @@ input:focus, textarea:focus {
   .column:hover {
   }
   .column img {
-      width: 256px;
-      height: 256px;
+      width: auto;
+      height: auto;
       display: block;
       margin-left: auto;
       margin-right: auto;
