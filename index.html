@@ -1,19 +1,283 @@
 <!DOCTYPE>
 <html>
-<head>
-  <link rel="stylesheet" href="style.css" type="text/css"/>
-</head>
-<body>
-  <p>
-      Hi!
-  </p>
-  <div class="container">
-    <form action="https://formspree.io/edaycontact@gmail.com"
-        method="POST">
-      <input type="text" name="name">
-      <input type="email" name="_replyto">
-      <input type="submit" value="Send">
-  </form>
+  <head>
+    <title> Elif Dayı </title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images\short_icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Open+Sans:300|Raleway:200,300" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  </head>
+  <body>
+  <div class="header">
+    <nav>
+      <div class="logo"> <!-- Logo will be added here.-->
+      </div>
+      <div class="navi">
+        <ul class="list">
+          <li><a href="#homeindex1">Home</a></li>
+          <li><a href="#indexabout">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#indexhireme">Hire Me</a></li>
+          <li><a href="#indexcontact">Contact</a></li>
+        </ul>
+      </div>
+    <nav>
+  </div>
+  <div class="index1" id="homeindex1">
+      <span class="helper"></span><img src="images/background.svg"/>
+    <!--  <span class="helper"></span><img id="responsive_image" src="images/background_responsive_2.svg" /> -->
+  </div>
+  <div class="index2">
+    <div id="one-third">
+      <a href="#indexabout" style="text-decoration:none; color:black;">
+        <img src="images/circle.svg"/>
+        <h3> About </h3>
+        <p > Hi! It is Elif. I am bussy with designer. Please click here to get more information about me.</p>
+      </a>
+    </div>
+    <div id="two-third">
+      <a href="#portfolio" style="text-decoration:none; color:black;">
+        <img src="images/square.svg"/>
+        <h3> Portfolio </h3>
+        <p> Here is my portfolio. Please check it and see what I have done, so far. </p>
+      </a>
+    </div>
+    <div id="three-third">
+      <a href="#indexcontact" style="text-decoration:none; color:black;">
+        <img src="images/triangle.svg"/>
+        <h3> Contact </h3>
+        <p> If you need to contact me. Please click here to make connection with me.</p>
+      </a>
+    </div>
+  </div>
+  <section class="parallax-1" id="indexhireme">
+			<div class="parallax-inner">
+        <div class="cover"></div>
+        <div class="popup">
+            <div class="close">
+               <span>x</span>
+            </div>
+            <div class="popupform">
+              <h2> Please fill out the form </h2>
+              <form action="https://formspree.io/edaycontact@gmail.com" method="POST" id="form" class="hirepopup" >
+                <p class="name">
+                  <input type="text" name="username" id="pname" placeholder="Your Name" />
+                </p>
+                <p class="email">
+                  <input type="text" name="_replyto" id="pemail" placeholder="Your E-mail" />
+                </p>
+                <p class="title">
+                  <input type="text" name="jobt" id="jobtitle" placeholder="Job Title" />
+                </p>
+                <p class="description">
+                  <textarea type="text" name="jobd" id="jobdescription" placeholder="Short Job Description" /></textarea>
+                </p>
+                <p class="usertextbutton" >
+                  <input type="submit" value="SEND" id="popupbutton" />
+                </p>
+              </form>
+            </div>
+        </div>
+        <div class="letters">
+          <div class="open">
+            <div class="letter">
+               <button class="hirebutton">Hire Me!</button>
+            </div>
+          </div>
+        </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+               $(".open").click(function () {
+                $(".popup").fadeIn(500);
+                $(".cover").fadeTo(500, 0.5);
+                $(".hirebutton").fadeTo(0.1, 0);
+            });
+            $(".close").click(function () {
+                $(".popup").fadeOut(500);
+                $(".cover").fadeOut(500);
+                $(".hirebutton").fadeTo(100,1);
+            });
+        });
+        </script>
 </div>
-</body>
+</section>
+  <div class="about" id="indexabout">
+    <div id="aboutimg">
+      <img src=""/>
+    </div>
+    <div id="aboutp">
+      <div id="aboutp-center">
+        <div id="abouttitle" >
+          <p> HI, MY NAME IS ELIF</p>
+        </div>
+        <p >
+          I am a graphic designer. Currently, I am interested in UX/UI Design but I enjoy illustrations, mini animations and logo design as well and I have also Bachelor's degree in Computer Science at Bilkent University. I am willing to work and already excited about new projects. If you want to get more information about me, you can check out my CV or  contact to me!
+        </p>
+    </div>
+  </div>
+  </div>
+  <div id="portfolio">
+      <div class="container" >
+        <div class="row" >
+          <div class="column">
+            <a href="#">
+                <img class="img-responsive" src="images/f2f3f4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="column">
+            <a href="#">
+                <img class="img-responsive" src="images/f2f3f4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="column">
+            <a href="#">
+                <img class="img-responsive" src="images/f2f3f4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="column">
+            <a href="#">
+                <img class="img-responsive" src="images/f2f3f4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="column">
+            <a href="#">
+                <img class="img-responsive" src="images/f2f3f4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="column">
+            <a href="#">
+                <img class="img-responsive" src="images/f2f3f4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="column">
+            <a href="#">
+                <img class="img-responsive" src="images/f2f3f4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="column">
+            <a href="#">
+                <img class="img-responsive" src="images/f2f3f4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="column">
+            <a href="#">
+                <img class="img-responsive" src="images/f2f3f4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="column">
+            <a href="#">
+                <img class="img-responsive" src="images/f2f3f4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="column">
+            <a href="#">
+                <img class="img-responsive" src="images/f2f3f4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="column">
+            <a href="#">
+                <img class="img-responsive" src="images/f2f3f4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="footer" id="indexcontact">
+    <div class="firstfooter"> </div>
+    <div class="contact">
+      <div class="contactdiv">
+        <h2> Contact Form </h2>
+        <form action="https://formspree.io/edaycontact@gmail.com" method="POST" id="cform" class="contactform" >
+          <p class="name">
+            <input type="text" name="username" id="name" placeholder="Your Name" />
+          </p>
+          <p class="email">
+            <input type="text" name="_replyto" id="email" placeholder="Write Your E-mail" />
+          </p>
+          <p class="usertext" >
+            <textarea type="text" name="usermessage" id="usermsg" placeholder="Write something to me" /></textarea>
+          </p>
+          <p class="usertextbutton" >
+            <input type="submit" value="SEND" />
+          </p>
+        </form>
+      </div>
+      <div class="socialmedia" >
+          <p>o elifdayi@gmail.com </p>
+        <a href="https://www.behance.net/elifdayi">
+          <p>o behance.net/elifdayi</p>
+        </a>
+        <a href="https://twitter.com/elifdayi">
+          <p>o twitter.com/elifdayi</p>
+        </a>
+        <a href="https://instagram.com/selifdayi">
+          <p>o instagram.com/selifdayi</p>
+        </a>
+        <a href="https://github.com/elifdayi">
+          <p>o github.com/elifdayi</p>
+        </a>
+    </div>
+    </div>
+    <div class="thirdfooter"> </div>
+  </div>
+  <div class="socialmediaicons">
+    <div class="socialmediaiconsposition">
+      <a href="https://www.behance.net/elifdayi">
+        <img class="" src="images/1496883547_online_social_media_behance.svg" alt="">
+      </a>
+    <!--  <a href="#">
+        <img class="" src="images/1496882746_dribbble_online_social_media.svg" alt="">
+      </a> -->
+      <a href="#">
+        <img class="" src="images/1496883528_mail_email_envelope_send_message.svg" alt="">
+      </a>
+      <a href="https://twitter.com/elifdayi">
+        <img class="" src="images/1496883583_twitter_online_social_media.svg" alt="">
+      </a>
+      <a href="https://instagram.com/selifdayi">
+        <img class="" src="images/1497448348_instagram_online_social_media_photo.svg" alt="">
+      </a>
+      <a href="https://github.com/elifdayi">
+        <img class="" src="images/1496882720_social_media_logo_github.svg" alt="">
+      </a>
+    </div>
+  </div>
+  <div class="buttomfooter" >
+    <div class:"buttomfooterposition">
+      <a href="#indexabout">
+        <img src="images/circle.svg"/>
+      </a>
+      <a href="#portfolio">
+        <img src="images/square.svg"/>
+      </a>
+      <a href="#homeindex1">
+        <img src="images/triangle.svg"/>
+      </a>
+    </div>
+  </div>
+  </body>
 </html>
