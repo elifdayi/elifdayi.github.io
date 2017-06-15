@@ -755,11 +755,21 @@ input:focus, textarea:focus {
   background-color: #252627;
 }
 .buttomfooterposition{
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  margin: 0px auto;
+  padding-left:42%;
 }
+
+.buttomfooter a{
+  text-decoration: none;
+}
+
+.buttomfooter img{
+  width: auto;
+  height: auto;
+  margin-right: 27px;
+
+}
+
 
 .firstfooter{
   width: 10%;
@@ -933,5 +943,17 @@ input:focus, textarea:focus {
     margin: 20px 5px 40px 5px;
     background-color: transparent;
     display: inline-block;
+  }
+  .buttomfooterposition{
+    margin: 0px auto;
+    padding-left:35%;
+  }
+}
+
+
+@media only screen and (max-width:470px){
+  .buttomfooterposition{
+    margin: 0px auto;
+    padding-left:29%;
   }
 }
