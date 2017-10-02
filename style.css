@@ -10,7 +10,7 @@ body{
 }
 
 /*   HEADER  (NAVIGATION) */
-@header {
+.header {
   width: 100%;
   height: 7%;
   background-color: white;
