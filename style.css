@@ -10,8 +10,7 @@ body{
 }
 
 /*   HEADER  (NAVIGATION) */
-
-.header{
+@header {
   width: 100%;
   height: 7%;
   background-color: white;
@@ -26,7 +25,8 @@ opacity: 0;
   width: 630px;
   height: 100%;
   float: right;
-  background-color: transperant;
+  background-color: white;
+  position: fixed;
 }
 /* LEARN DIFFERENCE FEATURES BTW UL & LI*/
 .list{
