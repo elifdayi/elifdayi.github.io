@@ -704,6 +704,21 @@ input:focus, textarea:focus {
       background-color: transperant;
       cursor: default;
   }
+    .bigimages{
+      width: 100%;
+      height: auto;
+    }
+  .bigimgs{
+    width: 48%;
+    height: auto;
+    float: left;
+    display: block;
+    margin: 10px;
+    padding: 50px 0px  0px 0px;
+    background-color: transperant;
+    cursor: default;
+    overflow: hidden;
+  }
 
   * {
       box-sizing: border-box;
