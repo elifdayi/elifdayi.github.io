@@ -704,10 +704,10 @@ input:focus, textarea:focus {
       background-color: transperant;
       cursor: default;
   }
-    .bigimages{
-      width: 100%;
-      height: auto;
-    }
+  .bigimages{
+    width: 100%;
+    height: auto;
+  }
   .bigimgs{
     width: 48%;
     height: auto;
@@ -738,7 +738,6 @@ input:focus, textarea:focus {
     top:50%;
     left:50%;
   }
-
   @media only screen and (max-width: 1215px){
       .container{
         padding: 0px;
